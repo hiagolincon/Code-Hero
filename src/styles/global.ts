@@ -1,0 +1,58 @@
+import { createGlobalStyle } from 'styled-components';
+import 'react-toastify/dist/ReactToastify.css';
+
+export default createGlobalStyle`
+  * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      background-color: #c53030;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #fff;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: #c53030;
+    }
+  }
+
+  body {
+    background: #E5E5E5;
+    -webkit-font-smoothing: antialiased !important;
+    font-family: 'PT Sans Caption', sans-serif;
+  }
+
+  body, input, button {
+    font: 14px sans-serif;
+    font-family: 'PT Sans Caption', sans-serif;
+  }
+  a {
+    text-decoration: none;
+    font-family: 'PT Sans Caption', sans-serif;
+  }
+  ul {
+    list-style: none;
+  }
+
+  #root {
+    /* max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 20px 50px; */
+    --white: #FFFFFF;
+    --dark-smoke: #555555;
+    --smoke: #8E8E8E;
+    --dark-snow: #E5E5E5;
+    --snow: #F5F5F5;
+    --dark-blue: #167ABC;
+  }
+
+  button {
+    cursor: pointer;
+  }
+`;
